@@ -1,0 +1,1 @@
+![substring>=jdk1.7](../../doc/substring.png)
