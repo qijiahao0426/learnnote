@@ -38,6 +38,11 @@ public final class _String
         public _String(char value[]) {
             this.value = Arrays.copyOf(value, value.length);
         }
+
+        public _String(char value[], int offset, int count) {
+            //check boundary
+            this.value = Arrays.copyOfRange(value, offset, offset + count);// 关键就是这里的数组拷贝方法，这会创建一个新的底层字符数组
+        }
         /**
          * 字节数组初始化
          */
@@ -115,7 +120,19 @@ public final class _String
          * intern方法：如果常量池中有当前String的值，就返回这个值，如果没有就加进去，返回这个值的引用
          */
         public native String intern();
-        
+
+        /**
+         * substring
+         * @param beginIndex
+         * @param endIndex
+         * @return
+         */
+        public _String substring(int beginIndex, int endIndex) {
+            //check boundary
+            int subLen = endIndex - beginIndex;
+            return new _String(value, beginIndex, subLen);
+        }
+
         private static void checkBounds(byte[] bytes, int offset, int length) {
             if (length < 0)
                 throw new StringIndexOutOfBoundsException(length);
