@@ -61,8 +61,16 @@ def smoSimple(dataMatIn,classLabels,C,toler,maxIter):# 数据集，类别标签�
                     L=max(0,alphas[j]+alphas[i]-C)
                     H=min(C,alphas[j]+alphas[i])
                 if L==H: print "L==H";continue
-                
-                
+                eta=2.0*dataMatrix[i,:]*dataMatrix[j,:].T- \
+                    dataMatrix[i,:]*dataMatrix[i,:].T - \
+                    dataMatrix[j,:]*dataMatrix[j,:].T # Eta是alpha[j]的最优修改量，该过程对真实SMO算法进行了简化处理。如果eta为0，那么 计算新的alpha[j]就比较麻烦了，这里我们就不对此进行详细的介绍了
+                if eta>=0: print "eta>=0";continue
+                alphas[j]-=labelMat[j]*(Ei-Ej)/eta
+                alphas[j]=clipAlpha(alphas[j],H,L)
+                if(abs(alphas[j]-alphaJold)<0.00001):print \
+                        "j not moving enough";continue
+                alphas[i]+=labelMat[j]*labelMat[i]*\
+                        (alphaJold-alphas[j])
                 
                 
                 
