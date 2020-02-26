@@ -5,7 +5,7 @@ url="http://"
 headers={"Content-Type":"application/json"}
 data={
     "data":[{
-                "dep_id":"T01"
+                "dep_id":"T01",
                 "dep_name":"Test学院"
             }]
     }
