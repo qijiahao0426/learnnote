@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="car" class="cn.qjh.bean.Car" depends-on="book,person"></bean>
+    <bean id="person" class="cn.qjh.bean.Person"></bean>
+    <bean id="book" class="cn.qjh.bean.Book"></bean>
+
+</beans>

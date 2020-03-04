@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd">
+
+    <bean id="car01" class="cn.qjh.bean.Car">
+        <property name="carName" value="宝马"></property>
+        <property name="color" value="绿色"></property>
+        <property name="price" value="30000"></property>
+    </bean>
+    
+	<bean id="person01" class="cn.qjh.bean.Person">
+		<property name="lastName">
+			<null/>
+		</property>
+		<!-- <property name="car" ref="car01" ></property> -->
+		<property name="car">
+            <bean class="cn.qjh.bean.Car">
+                <property name="carName" value="自行车"></property>
+            </bean>
+		</property>
+	</bean>
+ 
+    <bean id="book01" class="cn.qjh.bean.Book">
+        <property name="bookName" value="东游记"></property>
+    </bean>
+    <bean id="person02" class="cn.qjh.bean.Person">
+        <property name="books">
+            <list>
+                <bean id="book00x" class="cn.qjh.bean.Book" p:bookName="西游记"></bean>
+                <ref bean="book01"/>
+            </list>
+        </property>
+        <property name="maps">
+            <map>
+                <entry key="key01" value="张三"></entry>
+                <entry key="key02" value-ref="book01"></entry>
+                <entry key="key03">
+                    <bean class="cn.qjh.bean.Car">
+                        <property name="carName" value="宝马"></property>
+                    </bean>
+                </entry>
+            </map>
+        </property>
+        
+        <property name="properties">
+            <props>
+                <prop key="username">root</prop>
+                <prop key="password">123456</prop>
+            </props>
+        </property>
+    </bean>
+    
+    
+    <bean class="cn.qjh.bean.Person" name="person03">
+        <property name="maps" ref="myMap"></property>
+    </bean>
+    <util:map id="myMap">
+                <entry key="key01" value="张三"></entry>
+                <entry key="key02" value-ref="book01"></entry>
+                <entry key="key03">
+                    <bean class="cn.qjh.bean.Car">
+                        <property name="carName" value="宝马"></property>
+                    </bean>
+                </entry>
+    </util:map>
+    
+    <bean id="person04" class="cn.qjh.bean.Person">
+        <property name="car" ref="car01"></property>
+        <property name="car.price" value="90909090"></property>
+    </bean>
+    
+    
+         <bean id="person05" class="cn.qjh.bean.Person" abstract="true">
+            <property name="lastName" value="张三"></property>
+            <property name="age" value="18"></property>
+            <property name="email" value="zhangsan@163.com"></property>
+            <property name="gender" value="男"></property>
+        </bean>
+    <bean id="person06" class="cn.qjh.bean.Person" parent="person05">
+        <property name="lastName" value="李四"></property>
+    </bean>
+</beans>
