@@ -16,6 +16,18 @@ public class IOCTest {
     ApplicationContext ioc0 = new ClassPathXmlApplicationContext("ioc3.xml");
 
     @Test
+    public void test10() {
+        Object bean = ioc0.getBean("myFactoryBeanImple");
+        System.out.println(bean.getClass());
+    }
+
+    @Test
+    public void test09() {
+        System.out.println(ioc0.getBean("airplane01"));
+        System.out.println("容器启动完成");
+    }
+
+    @Test
     public void test08() {
 
     }

@@ -7,4 +7,14 @@
     <bean id="person" class="cn.qjh.bean.Person"></bean>
     <bean id="book" class="cn.qjh.bean.Book"></bean>
 
+    <bean id="airplane01" class="cn.qjh.factory.AirPlaneStaticFactory" factory-method="getAirPlane">
+        <constructor-arg value="李四"></constructor-arg>
+    </bean>
+    
+    <bean id="airPlaneInstanceFactory" class="cn.qjh.factory.AirPlaneInstanceFactory"></bean>
+    <bean id="airplane02" class="cn.qjh.bean.AirPlane" factory-bean="airPlaneInstanceFactory" factory-method="getAirPlane">
+        <constructor-arg value="王武"></constructor-arg>
+    </bean>
+    
+    <bean id="myFactoryBeanImple" class="cn.qjh.factory.MyFactoryBeanImple"></bean>
 </beans>
