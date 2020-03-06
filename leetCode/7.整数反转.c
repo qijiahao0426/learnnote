@@ -22,4 +22,3 @@ int rev = 0;
 
 // @lc code=end
 
-//12345
