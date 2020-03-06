@@ -1,6 +1,5 @@
 import pymysql
 db = pymysql.connect("localhost","testuser","test123","TESTDB" )
-
 cursor=db.cursor()
 cursor.execute("select *")
 data=cursor.fetchone()
