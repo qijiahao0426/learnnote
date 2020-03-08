@@ -22,7 +22,7 @@ int isValid(char * s){
             }else if(s[i]=='}'&&stack[top--]!='{'){
                 return 0;
             }
-        }else if(s[i]==')'||s[i]==']'||s[i]=='}'){
+        }else if(top<0){
             return 0;
         }
     }
