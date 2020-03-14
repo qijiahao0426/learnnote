@@ -9,13 +9,23 @@
 #include<limits.h>
 int maxSubArray(int* nums, int numsSize){
     int max=INT_MIN;
+    // for(int i=0;i<numsSize;i++){
+    //     int sum=0;
+    //     for(int j=i;j<numsSize;j++){
+    //         sum+=nums[j];
+    //         if(sum>max){
+    //             max=sum;
+    //         }
+    //     }
+    // }
+    int sum=0;
     for(int i=0;i<numsSize;i++){
-        int sum=0;
-        for(int j=i;j<numsSize;j++){
-            sum+=nums[j];
-            if(sum>max){
-                max=sum;
-            }
+        sum+=nums[i];
+        if(max<sum){
+            max=sum;
+        }
+        if(sum<0){
+            sum=0;
         }
     }
     return max;
