@@ -13,11 +13,6 @@
  *     struct TreeNode *right;
  * };
  */
- struct TreeNode {
-     int val;
-     struct TreeNode *left;
-     struct TreeNode *right;
- };
 
 int maxDepth(struct TreeNode* root){
     return MAX(root,0);
