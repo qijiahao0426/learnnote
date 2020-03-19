@@ -14,7 +14,11 @@
  * };
  */
 
-
+  struct TreeNode {
+      int val;
+      struct TreeNode *left;
+      struct TreeNode *right;
+  };
 #include <stdio.h>
 #include <stdlib.h>
 struct TreeNode* DFS(int *nums,int start,int end){
