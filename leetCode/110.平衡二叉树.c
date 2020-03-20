@@ -15,11 +15,12 @@
  */
 #include<math.h>
 
-//  struct TreeNode {
-//      int val;
-//      struct TreeNode *left;
-//      struct TreeNode *right;
-//  };
+ struct TreeNode {
+     int val;
+     struct TreeNode *left;
+     struct TreeNode *right;
+ };
+ 
 int isBalanced(struct TreeNode* root){
     if(root==0) return 1;
     return (abs(depth(root->left)-depth(root->right))<=1)&&isBalanced(root->left)&&isBalanced(root->right);
