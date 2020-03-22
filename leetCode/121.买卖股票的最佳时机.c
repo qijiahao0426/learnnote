@@ -22,9 +22,9 @@ int maxProfit(int* prices, int pricesSize){
     int min=prices[0];
     int* dp=(int*)calloc((pricesSize+1),sizeof(int));
     for(int i=1;i<pricesSize;i++){
-        min=min<prices[i]?min:prices[i];
         int tmp=prices[i]-min;
         dp[i]=dp[i-1]>tmp?dp[i-1]:tmp;
+        min=min<prices[i]?min:prices[i];
     }
     return dp[pricesSize-1];
 }
