@@ -1,46 +1,17 @@
 {
-    // 使用 IntelliSense 了解相关属性。 
-    // 悬停以查看现有属性的描述。
-    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Main",
-            "request": "launch",
-            "mainClass": "JavaCore._Enum.Main",
-            "projectName": "learnnote_19280acf"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Main",
-            "request": "launch",
-            "mainClass": "JavaCore.Main",
-            "projectName": "learnnote_19280acf"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Main",
-            "request": "launch",
-            "mainClass": "Java基础.Main",
-            "projectName": "learnnote_19280acf"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Enum",
-            "request": "launch",
-            "mainClass": "Java基础.Enum",
-            "projectName": "learnnote_19280acf"
-        },
-        {
-            "name": "clang++ build and debug active file",
-            "type": "lldb",
-            "request": "launch",
-            "program": "${workspaceFolder}/temp/${fileBasenameNoExtension}.out",
-            "args": [],
-            "cwd": "${workspaceFolder}",
-            "preLaunchTask": "clang++ build active file"
-        }
+            {
+                "name": "clang++ build and debug active file",
+                "type": "lldb",
+                "request": "launch",
+                "program": "${workspaceFolder}/temp/${fileBasenameNoExtension}.out",
+                "args": [],
+                "cwd": "${workspaceFolder}",
+                "preLaunchTask": "clang++ build active file"
+            }
     ]
-
 }
