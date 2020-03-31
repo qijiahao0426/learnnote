@@ -6,12 +6,10 @@
 
 # @lc code=start
 class Solution:
-    def rob(self, nums: List[int]) -> int:
+    def rob(self, nums: [int]) -> int:
         pre,cur=0,0
         for i in nums:
-            temp=cur
-            cur=max(i+pre,cur)
-            pre=temp
+            cur,pre=max(i+pre,cur),cur
         return cur
 # @lc code=end
 
