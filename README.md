@@ -16,3 +16,9 @@
             Go入门指南
             区块链
             机器学习 对数几率回归
+2020.6.06   凸优化P6
+            区块链  merkle树与简单支付验证（SPV）
+            博弈论P8-P10
+            Go入门指南  基本类型和运算符
+            BBC Biden: Trump 'despicable' for invoking George Floyd
+            
