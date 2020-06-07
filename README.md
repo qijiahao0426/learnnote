@@ -21,4 +21,7 @@
             博弈论P8-P10
             Go入门指南  基本类型和运算符
             BBC Biden: Trump 'despicable' for invoking George Floyd
-            
+2020.6.07   机器学习python实战  Logistic回归梯度上升算法
+            区块链 挖矿
+            凸优化P7 线性矩阵不等式的解集是凸集（有点难）
+            博弈论P11
