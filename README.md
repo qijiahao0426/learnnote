@@ -25,3 +25,9 @@
             区块链 挖矿
             凸优化P7 线性矩阵不等式的解集是凸集（有点难）
             博弈论P11
+2020.6.08   机器学习python实战  Logistic回归简单实现
+            凸优化P8 透视函数和线性分数函数（好难啊啊啊啊啊）
+            博弈论P12-P13
+            区块链  双花攻击
+            BBC Prince Andrew asked by US to testify in Jeffrey Epstein sex case
+            python实现区块链    实现创建新块功能
