@@ -31,3 +31,8 @@
             区块链  双花攻击
             BBC Prince Andrew asked by US to testify in Jeffrey Epstein sex case
             python实现区块链    实现创建新块功能
+2020.6.08   凸优化P9    凸函数的定义
+            机器学习    随机梯度上升算法
+            博弈论P14-P18
+            区块链  第一遍（完）
+            python实现区块链（完）
