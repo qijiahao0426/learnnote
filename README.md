@@ -46,3 +46,7 @@
             golang 实现区块链(Bitcoin)系列2 - 工作量证明
 2020.6.11   凸优化P12
             论文
+2020.6.12   博弈论
+            凸优化P13
+            Optimal Auction For Edge Computing Resource Management in Mobile Blockchain Networks: A Deep Learning Approach
+
