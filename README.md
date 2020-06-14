@@ -49,4 +49,4 @@
 2020.6.12   博弈论
             凸优化P13
             Optimal Auction For Edge Computing Resource Management in Mobile Blockchain Networks: A Deep Learning Approach
-
+2020.6.13   Optimal Auction For Edge Computing Resource Management in Mobile Blockchain Networks: A Deep Learning Approach
