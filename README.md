@@ -52,4 +52,5 @@
 2020.6.13   Optimal Auction For Edge Computing Resource Management in Mobile Blockchain Networks: A Deep Learning Approach
 2020.6.14   凸函数P14
             基于区块链与边缘计算的物联网数据管理 存疑
-            
+2020.6.16   《边缘计算》        
+            凸优化P15
