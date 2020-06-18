@@ -57,3 +57,5 @@
 2020.6.17   《边缘计算》     
             凸优化P16
             矩阵论P1
+2020.6.18   凸优化P17
+            《2018-IEEE Comm. Magz.-When Mobile Blockchain Meets Edge Computing》
