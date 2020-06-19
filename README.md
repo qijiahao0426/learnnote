@@ -59,3 +59,6 @@
             矩阵论P1
 2020.6.18   凸优化P17
             《2018-IEEE Comm. Magz.-When Mobile Blockchain Meets Edge Computing》
+2020.6.19   凸优化P18，P19
+            《2018-IEEE Comm. Magz.-When Mobile Blockchain Meets Edge Computing》整理
+            博弈论
