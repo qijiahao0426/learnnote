@@ -63,3 +63,5 @@
             《2018-IEEE Comm. Magz.-When Mobile Blockchain Meets Edge Computing》整理
             博弈论
             机器学习-感知器算法
+2020.6.20   凸优化P20
+            论文
