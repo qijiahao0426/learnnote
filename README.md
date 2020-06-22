@@ -66,3 +66,6 @@
 2020.6.20   凸优化P20
             论文
 2020.6.21   博弈论
+2020.6.22   凸优化P21
+            《Optimal Pricing-Based Edge Computing Resource Management in Mobile Blockchain》阅读+总结
+            机器学习P21，P22 多层神经网络
