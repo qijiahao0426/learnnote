@@ -69,3 +69,7 @@
 2020.6.22   凸优化P21
             《Optimal Pricing-Based Edge Computing Resource Management in Mobile Blockchain》阅读+总结
             机器学习P21，P22 多层神经网络
+2020.6.23   凸优化P22
+            博弈论P2
+            《Social Welfare Maximization Auction in Edge Computing Resource Allocation for Mobile Blockchain》粗读
+            机器学习P23 三层神经网络可以模拟所有决策面
